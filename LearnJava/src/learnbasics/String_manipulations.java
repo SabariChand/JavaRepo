@@ -70,12 +70,46 @@ public class String_manipulations {
 		System.out.println("another Method for Init Caps = " +trim);
 		
 	}
+     static String swapcase(String str)
+     {
+    	
+    	 int strLen;
+         if (str == null || (strLen = str.length()) == 0) {
+             return str;
+         }
+         
+         StringBuffer sb = new StringBuffer(strLen);
+         
+         char ch =0;
+         for (int i = 0; i < strLen; i++) {
+			ch = str.charAt(i);
+			if(Character.isUpperCase(ch))
+			{
+				ch =Character.toLowerCase(ch);
+			}
+			else if(Character.isTitleCase(ch))
+			{
+				ch =Character.toLowerCase(ch);
+			}
+			
+			else if(Character.isLowerCase(ch))
+			{
+				ch =Character.toUpperCase(ch);
+			}
+			sb.append(ch);
+		}
+         
+         return sb.toString();
+     }
 	
 	public static void main(String[] args) 
 	{
 		//countofeachcharaters();
 		//initialcapsinastring();
-		anothermethodforinitcaps();
+		//anothermethodforinitcaps();
+		String swap = swapcase("my name is BILLA");
+		System.out.println(swap);
+		
 		}
 
 }
