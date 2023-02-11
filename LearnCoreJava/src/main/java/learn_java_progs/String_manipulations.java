@@ -3,7 +3,7 @@ package learn_java_progs;
 public class String_manipulations {
 	static void countofeachcharaters()
 	{
-		String s = "wElcome To @java123";
+		String s = "Welcome to @java123";
 		int countofsmall =0;
 		int countofCaps =0;
 		int countofNum =0;
