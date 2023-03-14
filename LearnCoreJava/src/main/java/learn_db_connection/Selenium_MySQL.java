@@ -33,6 +33,8 @@ public static void main(String[] args) throws SQLException {
 	System.setProperty("webdriver.chrome.driver",
 			  "C:\\Users\\Sabari Nathan\\Documents\\JAVA-SELNIUM\\drivers\\chromedriver.exe");
 	
+	
+	//xhrome options
 	ChromeOptions ops = new ChromeOptions();
 	ops.addArguments("--remote-allow-origins=*");
 
